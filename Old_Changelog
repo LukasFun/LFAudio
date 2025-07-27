@@ -1,0 +1,37 @@
+This file logs changes prior to the repository.
+
+- 07.05.2024:	Changed queue looping to persist after finishing all loops of a queue
+- 28.04.2024:	Reduced block size of the audio stream for reduced latency
+- 26.04.2024:	Added functionality to query the name of the current track
+- 23.04.2024:	Fixed a bug that could cause the callbacks for the end of tracks and queues to stall after terminating a player,
+				fixed a bug that caused a crash when trying to adjust the volume
+- 21.04.2024:	Added functionality to prevent loading audio files that don't fit into system memory,
+				added functionality to prevent execution of callbacks with wrong argument format
+- 14.04.2024:	Fixed a bug that caused callback functions linked to finishing a track or queue to not be called properly
+- 13.04.2024:	Added quotation marks to command line outputs when printing the path of a source file
+- 12.04.2024:	Fixed a bug that caused the player to be stuck when trying to load an invalid file,
+				added functionailty to read if loading a file was successful
+- 09.04.2024:	Added functionality to toggle playback
+- 08.04.2024:	Changed default state for loading audio files to in the main trhead
+- 07.04.2024:	Added functionality to load a sound file asynchronously and wait for it that to finish,
+				fixed a bug that caused waiting loops to persist after terminating the player
+- 31.03.2024:	Changed queue looping functionality to match that of individual tracks,
+				fixed a bug that caused audio underruns when loading a sound file
+- 09.03.2024:	Added functionality to tie a callback to finishing a track or queue
+- 08.03.2024:	Added functionality to shuffle the queue,
+				added functionality to convert mono tracks into stereo when queueing them
+- 25.02.2024:	Added functionality to jump to a specific position in a track
+- 10.01.2024:	Added functionality for changing the volume over time
+- 02.01.2024:	Added functionality for looping the queue,
+				added functionality for looping individual tracks,
+				added functionality to wait for track to finish,
+				added functionality to wait for queue to finish,
+				switched from using a duplex stream to only output stream,
+				added guards against invalid arguments,
+				added functionality to handle different sampling rates,
+				added functionality to remove tracks from the queue
+- 01.01.2024:	Switched from using sounddevice.play to a custom output stream (which also fixed a bug causing other applications to make the audio device unavailable),
+    			added functionality for volume control
+- 29.12.2023:	Added functionality to resume play from previous position
+- 28.12.2023:	First proof of concept version
+- 26.12.2023:	Started development
