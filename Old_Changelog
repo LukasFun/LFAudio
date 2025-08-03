@@ -1,5 +1,5 @@
 This file logs changes prior to the repository.
-
+ 
 - 07.05.2024:	Changed queue looping to persist after finishing all loops of a queue
 - 28.04.2024:	Reduced block size of the audio stream for reduced latency
 - 26.04.2024:	Added functionality to query the name of the current track
